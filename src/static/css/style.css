@@ -1,0 +1,69 @@
+
+body {
+  font-family: Georgia, "Times New Roman",
+          Times, serif;
+  color: black;
+  background-color: #ddebff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+}
+
+.app-content {
+  padding-left: 11em;
+}
+
+.navbar {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 10em;
+  text-decoration: none
+}
+
+.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black ;
+  transition: 0.3s;
+}
+
+.navbar li:hover{
+  background-color:#beecea;
+}
+
+.navbar li.focused{
+  color:#fff;
+  background-color:#41c7c2;
+}
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+footer {
+  margin: 4em auto;
+  padding: 2em;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+footer p {
+  line-height: 1.2em;
+  margin: 0 0 1em 0;
+}
+
