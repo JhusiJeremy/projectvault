@@ -1,7 +1,7 @@
 // src/data/blogs.js
 /*
 each blog = {
-  'id', 'title', 'day', 'month', 'year', 'img', 'category': string
+  'id', 'title', 'date', 'img', 'category': string
   'tags': [string, ],
   'content': string
 }
@@ -11,13 +11,20 @@ const blogs = [
   {
     'id': '0',
     'title': 'Day 0',
-    'day': '19',
-    'month': 'October',
-    'year': '2016',
+    'date': 'October 19 2016',
     'img': '/img/MonkeyAvatar.jpeg',
     'category': 'technical',
-    'tags': ['CSS', 'HTML'],
-    'content': 'Day zero, working on the nav bar, learning CSS & HTML.'
+    'tags': ['CSS', 'HTML', 'React'],
+    'content': 'Day zero, working on the nav bar, learning CSS & HTML. ES6 react create class method: No COMMA!'
+  },
+  {
+    'id': '1',
+    'title': 'Day 1',
+    'date': 'October 20 2016',
+    'img': '',
+    'category': 'technical',
+    'tags:' ['CSS'],
+    'content': 'Day one, working on the CSS.'
   },
   {
     // ...

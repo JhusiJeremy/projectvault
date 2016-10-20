@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const linkto = ['/', 'blog', 'about'];
-const pagename = ['Home Page', 'My Blogs', 'About Me'];
+const pagename = ['Home', 'Blogs', 'About'];
 
 export default class Layout extends React.Component {
   render() {
@@ -12,9 +12,8 @@ export default class Layout extends React.Component {
         <Navbar />
         <div className="app-content">{this.props.children}</div>
         <footer>
-          <p>
-            This is my playground, haven't decide what to do here.
-          </p>
+          <p>This is Weihong's Vault Project.</p>
+          <p>Contact Me: jeremy22484@gmail.com</p>
         </footer>
       </div>
     );
@@ -22,7 +21,6 @@ export default class Layout extends React.Component {
 }
 
 class Navbar extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {focused: 0}
@@ -33,8 +31,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    var self = this;
-
     return (
       <nav className="navbar">
         <ul>
@@ -44,7 +40,7 @@ class Navbar extends React.Component {
               style = 'focused';
             }
             return (
-              <li className={style} onClick={self.clicked.bind(self, index)}>
+              <li className={style} onClick={this.clicked.bind(this, index)}>
                 <Link to={linkto[index]}>
                   {name}
                 </Link>

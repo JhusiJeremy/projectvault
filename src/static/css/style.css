@@ -1,13 +1,17 @@
 
+
+/******************** Global Layout **********************/
+
 body {
   font-family: Georgia, "Times New Roman",
           Times, serif;
-  color: black;
-  background-color: #ddebff;
+  margin: 0;
+  color: rgba(66,66,66,1);
 }
 
 a {
   text-decoration: none;
+  color: rgba(66,66,66,1);
 }
 
 p {
@@ -15,23 +19,38 @@ p {
 }
 
 .app-content {
-  padding-left: 11em;
+  padding-top: 50px;
 }
 
 .navbar {
-  position: absolute;
-  top: 2em;
-  left: 1em;
-  width: 10em;
-  text-decoration: none
+  height: 49.6px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(239,239,239,0.5);
+  overflow: auto;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.3),0 0 6px 2px rgba(0,0,0,0.15);
+  z-index:999;
+}
+
+.navbar ul {
+  display: inline-block;
+  float: right;
+  list-style-type: none;
+  padding: 16px 0;
+  margin: 0;
 }
 
 .navbar li {
-  background: white;
-  margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black ;
+  display: inline;
+  padding: inherit;
   transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a {
+  padding:16px;
+  font-weight: bold;
 }
 
 .navbar li:hover{
@@ -39,31 +58,22 @@ p {
 }
 
 .navbar li.focused{
-  color:#fff;
-  background-color:#41c7c2;
-}
-
-.header {
-  text-align: center;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto;
-  max-width: 400px;
-  width: 100%;
+  background-color: rgba(69,199,199,0.54);
 }
 
 footer {
-  margin: 4em auto;
-  padding: 2em;
-  text-align: center;
-  max-width: 800px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(239,239,239,1);
+  margin-top: 10em;
   width: 100%;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.3),0 0 6px 2px rgba(0,0,0,0.15);
+  padding: 2em;
+  vertical-align: middle;
 }
 
-footer p {
-  line-height: 1.2em;
-  margin: 0 0 1em 0;
-}
+/******************** Header **********************/
+
+
+
 
