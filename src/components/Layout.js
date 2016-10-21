@@ -9,11 +9,12 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <Navbar />
+        <Navbar pathname={this.props.location.pathname} />
         <div className="app-content">{this.props.children}</div>
         <footer>
           <p>This is Weihong's Vault Project.</p>
-          <p>Contact Me: jeremy22484@gmail.com</p>
+          <p>Contact me @ jeremy22484@gmail.com.</p>
+          <p>Have a nice day!</p>
         </footer>
       </div>
     );
@@ -23,7 +24,9 @@ export default class Layout extends React.Component {
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {focused: 0}
+    var pathname = (props.pathname=='/') ? props.pathname:props.pathname.slice(1);
+    console.log(pathname);
+    this.state = {focused: linkto.indexOf(pathname)};
   }
 
   clicked(index) {

@@ -8,7 +8,9 @@ export default class HomePage extends React.Component {
     return (
       <div className="home">
         <PageHeader imgUrl="/img/Monkey-BusinessA" />
-        <p>程序猿拯救世界！</p>
+        <div className="page-container">
+          <p>程序猿拯救世界！</p>
+        </div>
       </div>
     );
   }
