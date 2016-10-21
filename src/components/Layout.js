@@ -9,7 +9,7 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <Navbar pathname={this.props.location.pathname} />
+        <NavBar pathname={this.props.location.pathname} />
         <div className="app-content">{this.props.children}</div>
         <footer>
           <p>This is Weihong's Vault Project.</p>
@@ -21,11 +21,10 @@ export default class Layout extends React.Component {
   }
 }
 
-class Navbar extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props);
     var pathname = (props.pathname=='/') ? props.pathname:props.pathname.slice(1);
-    console.log(pathname);
     this.state = {focused: linkto.indexOf(pathname)};
   }
 
@@ -54,4 +53,10 @@ class Navbar extends React.Component {
       </nav>
     );
   }
+}
+
+NavBar.displayName = "NavBar";
+
+NavBar.propTypes = {
+  pathname: React.PropTypes.string.isRequired,
 }

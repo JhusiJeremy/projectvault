@@ -23,8 +23,17 @@ const blogs = [
     'date': 'October 20 2016',
     'img': '',
     'category': 'technical',
-    'tags:' ['CSS'],
+    'tags': ['CSS'],
     'content': 'Day one, working on the CSS.'
+  },
+  {
+    'id': '2',
+    'title': 'Day 2',
+    'date': 'October 21 2016',
+    'img': '',
+    'category': 'technical',
+    'tags': ['React'],
+    'content': 'Day two, figured out how to access to the location props, where you can read the current url.'
   },
   {
     // ...
