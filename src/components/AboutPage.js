@@ -6,7 +6,7 @@ export default class AboutPage extends React.Component {
   render() {
     return (
       <div className="about">
-        <PageHeader imgUrl="/img/Aboriginebats-Onea" />
+        <PageHeader imgUrl="/img/Aboriginebats-Onea" header1="About Me" header2="To go home." />
         <div className="page-container">
           <p>
             About Me <br /><br />
@@ -14,7 +14,7 @@ export default class AboutPage extends React.Component {
             Only thing you need to know is that, <br /><br />
             I am Here <br /><br />
             and you are here. <br /><br />
-            Have a nice day! 
+            Cheers! 
           </p>
         </div>
       </div>

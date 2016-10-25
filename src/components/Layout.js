@@ -14,7 +14,7 @@ export default class Layout extends React.Component {
         <footer>
           <p>This is Weihong's Vault Project.</p>
           <p>Contact me @ jeremy22484@gmail.com.</p>
-          <p>Have a nice day!</p>
+          <p>Cheers!</p>
         </footer>
       </div>
     );
