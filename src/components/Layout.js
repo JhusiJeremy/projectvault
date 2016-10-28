@@ -42,7 +42,7 @@ class NavBar extends React.Component {
               style = 'focused';
             }
             return (
-              <li className={style} onClick={this.clicked.bind(this, index)}>
+              <li key={index} className={style} onClick={this.clicked.bind(this, index)}>
                 <Link to={linkto[index]}>
                   {name}
                 </Link>

@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   entry: path.join(__dirname, 'src', 'app-client.js'),
   output: {
-    path: path.join(__dirname, 'src', 'static', 'js'),
+    path: path.join(__dirname, 'src', 'server', 'static', 'js'),
     filename: 'bundle.js'
   },
   module: {

@@ -31,7 +31,7 @@ export default class HomePage extends React.Component {
           <div className="blogs-container">
             {blogs.map(blog=> {
               return (
-                <BlogBox imgUrl={blog.imgUrl} title={blog.title} />
+                <BlogBox key={blog.title} imgUrl={blog.imgUrl} title={blog.title} />
               );
             })}
           </div>
