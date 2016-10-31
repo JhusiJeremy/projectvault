@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-router';
 
 export default class PageHeader extends React.Component {
-
   render () {
     var divStyle = {
       backgroundImage: 'url('+this.props.imgUrl+')',
@@ -27,11 +26,10 @@ export default class PageHeader extends React.Component {
     );
   }
 }
-
+PageHeader.displayName = "PageHeader";
 PageHeader.propTypes = {
   imgUrl: React.PropTypes.string.isRequired,
   header1: React.PropTypes.string,
   header2: React.PropTypes.string,
 }
 
-PageHeader.displayName = "PageHeader";

@@ -20,7 +20,13 @@ export default class Layout extends React.Component {
     );
   }
 }
+Layout.displayName = "Layout";
+Layout.propTypes = {
+  pathname: React.PropTypes.string.isRequired,
+}
 
+
+// Nav Bar
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -54,9 +60,4 @@ class NavBar extends React.Component {
     );
   }
 }
-
 NavBar.displayName = "NavBar";
-
-NavBar.propTypes = {
-  pathname: React.PropTypes.string.isRequired,
-}

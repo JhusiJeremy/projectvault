@@ -9,7 +9,6 @@ import { match, RouterContext } from 'react-router';
 import routes from '../routes';
 import NotFoundPage from '../components/NotFoundPage';
 import mongoose from 'mongoose';
-import Blog from './models/blog';
 import bodyParser from 'body-parser';
 
 // initialize the server and configure support for ejs templates
@@ -20,8 +19,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 // define bodyparser
 app.use(bodyParser.json());
-
-// define controllers
 
 // define the folder that will be used for static assets
 app.use(Express.static(path.join(__dirname, 'static')));
@@ -70,16 +67,6 @@ server.listen(port, err => {
 });
 
 //mongodb
-mongoose.connect('mongodb://localhost/blogs_db');
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/blog_db');
 
-var firstBlog = new Blog(
-  {
-    title: 'First Blog',
-    imgUrl: '/img/MonkeyAvatar.jpeg',
-    tags: ['CSS', 'HTML', 'React'],
-    content: 'Day zero, working on the nav bar, learning CSS & HTML. ES6 react create class method: No COMMA!'
-  }
-);
-
-console.info("Data:");
-console.info(firstBlog);

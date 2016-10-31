@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import PageHeader from './PageHeader'
-import blogs from '../data/blogs'
+//import blogs from '../data/blogs'
 import BlogBox from './BlogBox'
 
 export default class HomePage extends React.Component {
@@ -29,7 +29,7 @@ export default class HomePage extends React.Component {
             Alright, alright ...<br /><br />
           </p>
           <div className="blogs-container">
-            {blogs.map(blog=> {
+            {this.props.route.blogs.map(blog=> {
               return (
                 <BlogBox key={blog.title} imgUrl={blog.imgUrl} title={blog.title} />
               );
@@ -39,5 +39,9 @@ export default class HomePage extends React.Component {
       </div>
     );
   }
+}
+HomePage.displayName = "HomePage";
+HomePage.propTypes = {
+  blogs: React.PropTypes.string.isRequired
 }
 
