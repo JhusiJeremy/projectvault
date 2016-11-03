@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 export default class PageHeader extends React.Component {
   render () {
-    var divStyle = {
+    let divStyle = {
       backgroundImage: 'url('+this.props.imgUrl+')',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100% 100%',

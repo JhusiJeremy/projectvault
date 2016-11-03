@@ -30,7 +30,7 @@ Layout.propTypes = {
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    var pathname = (props.pathname=='/') ? props.pathname:props.pathname.slice(1);
+    let pathname = (props.pathname=='/') ? props.pathname:props.pathname.slice(1);
     this.state = {focused: linkto.indexOf(pathname)};
   }
 
@@ -43,7 +43,7 @@ class NavBar extends React.Component {
       <nav className="navbar">
         <ul>
           {pagename.map((name, index) => {
-            var style = '';
+            let style = '';
             if (this.state.focused==index) {
               style = 'focused';
             }
