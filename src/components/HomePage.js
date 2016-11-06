@@ -26,7 +26,7 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <div className="home">
-        <PageHeader imgUrl="/img/Monkey-BusinessA" header1="Vault Project" header2="This ain't no place for no hero." />
+        <PageHeader imgUrl="/img/Monkey-BusinessA" header1="Project Vault" header2="This ain't no place for no hero." />
         <div className="page-container">
           <p>
             Welcome!<br /><br />

@@ -7,30 +7,37 @@ import express from 'express';
 
 var blogController = express.Router();
 
-/*// test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-blogController.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
-});*/
-
-blogController.route("/blogs/:id?").get(getBlogs).post(addBlog);
+blogController.route("/blogs/:id?").get(getBlogs).post(addBlog).delete(deleteBlog);
 
 function getBlogs(req, res) {
-    Blog.find(function (err, blogs) {
-        if (err)
-            res.send(err);
-        else
-            res.json(blogs);
-    });
+  let query = {}
+  if (req.params.id) query._id = req.params.id;
+  Blog.find(query, function (err, blogs) {
+      if (err)
+          res.send(err);
+      else
+          res.json(blogs);
+  });
 }
 
 function addBlog(req, res) {
-    let blog = new Blog(_.extend({}, req.body));
-    blog.save(function (err) {
-        if (err)
-            res.send(err);
-        else
-            res.json(blog);
-    });
+  let blog = new Blog(_.extend({}, req.body));
+  blog.save(function (err) {
+      if (err)
+          res.send(err);
+      else
+          res.json(blog);
+  });
+}
+
+function deleteSBlog(req, res) {
+  let id = req.params.id;
+  Blog.remove({ _id: id }, function (err, removed) {
+      if (err)
+          res.send(err)
+      else
+          res.json(removed);
+  });
 }
 
 export default blogController;
