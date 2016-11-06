@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
+import BlogDetail from './components/BlogDetail';
 import NotFoundPage from './components/NotFoundPage';
 
 const routes = (
@@ -13,6 +14,7 @@ const routes = (
     <IndexRoute component={HomePage}/>
     <Route path="about" component={AboutPage}/>
     <Route path="blog" component={BlogPage}/>
+    <Route path="blog/:id" component={BlogDetail} />
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );
