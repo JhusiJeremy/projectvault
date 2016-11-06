@@ -30,7 +30,7 @@ function addBlog(req, res) {
   });
 }
 
-function deleteSBlog(req, res) {
+function deleteBlog(req, res) {
   let id = req.params.id;
   Blog.remove({ _id: id }, function (err, removed) {
       if (err)
