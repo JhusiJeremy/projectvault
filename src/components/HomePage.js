@@ -58,7 +58,5 @@ export default class HomePage extends React.Component {
   }
 }
 HomePage.displayName = "HomePage";
-HomePage.propTypes = {
-  blogs: React.PropTypes.string.isRequired
-}
+
 

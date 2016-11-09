@@ -22,7 +22,7 @@ export default class Layout extends React.Component {
 }
 Layout.displayName = "Layout";
 Layout.propTypes = {
-  pathname: React.PropTypes.string.isRequired,
+  location: React.PropTypes.object.isRequired,
 }
 
 

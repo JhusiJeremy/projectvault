@@ -89,7 +89,7 @@ footer p {
   margin-right: auto;
 }
 
-/******************** Header **********************/
+/******************** Page Header **********************/
 /* The background img is implemented in PageHeader.js */
 .header {
   position: absolute;
@@ -109,7 +109,7 @@ footer p {
   font-size: 60px;
 }
 
-/******************** Home **********************/
+/******************** Home Page **********************/
 .blogs-container {
   margin:auto;
   width: 960px;
@@ -147,6 +147,25 @@ footer p {
   font-size: 22px;
   text-align: left;
   margin-left: 1em;
+}
+
+/******************** Page Detail **********************/
+
+.blog-detail {
+  margin: 36px 36px;
+}
+
+.blog-detail h1 {
+  text-align: center;
+}
+
+.blog-detail h4 {
+  display: inline-block;
+  margin: 4px;
+}
+
+.blog-detail p {
+  text-align: left;
 }
 
 
