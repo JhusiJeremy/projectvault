@@ -7,7 +7,7 @@ import express from 'express';
 
 var blogController = express.Router();
 
-blogController.route("/blogs/:id?").get(getBlogs).post(addBlog).delete(deleteBlog);
+blogController.route("/blogs/:id?").get(getBlogs)/*.post(addBlog).delete(deleteBlog)*/;
 
 function getBlogs(req, res) {
   let query = {}
@@ -19,7 +19,7 @@ function getBlogs(req, res) {
           res.json(blogs);
   });
 }
-
+/*
 function addBlog(req, res) {
   let blog = new Blog(_.extend({}, req.body));
   blog.save(function (err) {
@@ -39,5 +39,5 @@ function deleteBlog(req, res) {
           res.json(removed);
   });
 }
-
+*/
 export default blogController;
