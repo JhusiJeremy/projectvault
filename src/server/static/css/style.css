@@ -153,10 +153,11 @@ footer p {
   text-decoration: underline;
 }
 
-/******************** Page Detail **********************/
+/******************** Blog Detail **********************/
 
 .blog-detail {
-  margin: 36px 36px;
+  margin: 36px 72px;
+  font-size: 18px;
 }
 
 .blog-detail h1 {
@@ -165,7 +166,9 @@ footer p {
 
 .blog-detail h4 {
   display: inline-block;
-  margin: 4px;
+  margin-right: 4px;
+  margin-top: 1px;
+  margin-bottom: 0;
 }
 
 .blog-detail p {

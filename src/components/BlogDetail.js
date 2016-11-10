@@ -35,7 +35,7 @@ export default class BlogDetail extends React.Component {
     return (
       <div className="blog-detail">
         <h1>{blog.title}</h1>
-        {(blog.tags.length>1)? <h4>Tags:</h4>:<h4>Tag:</h4>}
+        {(blog.tags.length>1)? <h4>{"Tags:"}</h4>:<h4>{"Tag:"}</h4>}
         {blog.tags.map((tag)=><h4 key={tag}>{tag}</h4>)}
         <p>Last Update: {blog.date.slice(0, blog.date.indexOf("T"))}</p>
         {content.map((paragraph)=><p key={paragraph}>{paragraph}<br/></p>)}
