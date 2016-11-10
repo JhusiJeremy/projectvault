@@ -5,7 +5,7 @@ import Blog from '../models/blog';
 import _ from 'underscore';
 import express from 'express';
 
-var blogController = express.Router();
+let blogController = express.Router();
 
 blogController.route("/blogs/:id?").get(getBlogs)/*.post(addBlog).delete(deleteBlog)*/;
 

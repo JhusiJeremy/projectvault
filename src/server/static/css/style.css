@@ -149,6 +149,10 @@ footer p {
   margin-left: 1em;
 }
 
+.blog-box a:hover {
+  text-decoration: underline;
+}
+
 /******************** Page Detail **********************/
 
 .blog-detail {

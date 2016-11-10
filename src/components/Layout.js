@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const linkto = ['/', 'blog', 'about'];
+const linkto = ['/', '/blog', '/about'];
 const pagename = ['Home', 'Blogs', 'About'];
 
 export default class Layout extends React.Component {
@@ -30,12 +30,25 @@ Layout.propTypes = {
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    let pathname = (props.pathname=='/') ? props.pathname:props.pathname.slice(1);
+    let pathname;
+    if (props.pathname.lastIndexOf('/')>0)
+      pathname = props.pathname.slice(0, props.pathname.lastIndexOf('/'));
+    else 
+      pathname = props.pathname;
     this.state = {focused: linkto.indexOf(pathname)};
   }
 
   clicked(index) {
     this.setState({focused: index});
+  }
+
+  componentWillReceiveProps(nextProps) {
+    let pathname;
+    if (nextProps.pathname.lastIndexOf('/')>0)
+      pathname = nextProps.pathname.slice(0, nextProps.pathname.lastIndexOf('/'));
+    else 
+      pathname = nextProps.pathname;
+    this.setState({focused: linkto.indexOf(pathname)});
   }
 
   render() {

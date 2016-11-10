@@ -2,7 +2,7 @@
 
 import mongoose from 'mongoose';
 
-var blogSchema = mongoose.Schema({
+let blogSchema = mongoose.Schema({
     title: String,
     date: {type: Date, default: Date.now},
     imgUrl: String,
@@ -10,6 +10,6 @@ var blogSchema = mongoose.Schema({
     content: String
 });
 
-var Blog = mongoose.model("Blog", blogSchema);
+let Blog = mongoose.model("Blog", blogSchema);
 
 export default Blog;

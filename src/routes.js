@@ -12,13 +12,13 @@ import NotFoundPage from './components/NotFoundPage';
 
 const routes = (
   <Route path="/" component={Layout}>
-    <IndexRoute component={HomePage}/>
-    <Route path="about" component={AboutPage}/>
-    <Route path="blog" component={BlogLayout}>
-      <IndexRoute component={BlogPage}/>
-      <Route path=":id" component={BlogDetail}/>
+    <IndexRoute component={HomePage} />
+    <Route path="/about" component={AboutPage} />
+    <Route path="/blog" component={BlogLayout}>
+      <IndexRoute component={BlogPage} />
+      <Route path=":id" component={BlogDetail} />
     </Route>
-    <Route path="*" component={NotFoundPage}/>
+    <Route path="*" component={NotFoundPage} />
   </Route>
 );
 

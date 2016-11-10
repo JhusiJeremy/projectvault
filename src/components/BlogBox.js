@@ -7,7 +7,7 @@ export default class BlogBox extends React.Component {
     return (
       <div className="blog-box">
         <img src={this.props.imgUrl} />
-        <p>{this.props.title}</p>
+        <Link to={`/blog/${this.props._id}`}><p>{this.props.title}</p></Link>
       </div>
     );
   }
@@ -16,6 +16,7 @@ export default class BlogBox extends React.Component {
 BlogBox.propTypes = {
   imgUrl: React.PropTypes.string,
   title: React.PropTypes.string,
+  _id: React.PropTypes.string
 }
 
 BlogBox.displayName = "BlogBox";
