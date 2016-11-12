@@ -12,8 +12,9 @@ export default class Layout extends React.Component {
         <NavBar pathname={this.props.location.pathname} />
         <div className="app-content">{this.props.children}</div>
         <footer>
-          <p>This is Weihong's Project Vault.</p>
-          <p>Contact me @ jeremy22484@gmail.com.</p>
+          <p>Contact me@:</p>
+          <Contact url="mailto:jeremy22484@gmail.com" img="/img/gmail.jpg" message="jeremy22484@gmail.com" />
+          <Contact url="https://github.com/JhusiJeremy" img="/img/GitHub-Mark-32px.png" message="JhusiJeremy" />
           <p>Cheers!</p>
         </footer>
       </div>
@@ -25,6 +26,17 @@ Layout.propTypes = {
   location: React.PropTypes.object.isRequired,
 }
 
+// Contact Button
+class Contact extends React.Component {
+  render() {
+    return (
+      <a href={this.props.url} style={{padding: '0'}}>
+        <p style={{verticalAlign: "middle"}}>
+          <img style={{height: '30px'}} src={this.props.img} />
+          {this.props.message}
+        </p>
+      </a>
+);}}
 
 // Nav Bar
 class NavBar extends React.Component {
@@ -73,7 +85,6 @@ class NavBar extends React.Component {
           })}
         </ul>
       </nav>
-    );
-  }
-}
+);}}
+
 NavBar.displayName = "NavBar";
