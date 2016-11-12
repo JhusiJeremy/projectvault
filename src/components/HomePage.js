@@ -29,7 +29,7 @@ export default class HomePage extends React.Component {
         <PageHeader imgUrl="/img/Monkey-BusinessA" header1="Project Vault" header2="This ain't no place for no hero." />
         <div className="page-container">
           <p style={{borderBottom: "3px double rgba(0, 0, 0, 0.05)"}}>
-            Welcome to my playground!<br />
+            Welcome!<br />
           </p>
           <p className="preface">  
             This is the place where I can play around any web technology I have learned.

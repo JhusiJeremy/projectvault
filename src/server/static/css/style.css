@@ -12,13 +12,19 @@ body {
 
 a {
   text-decoration: none;
+  padding: 0;
   color: rgba(66,66,66,0.66);
 }
 
 p {
   text-align: center;
-  font-size: 23.3px;
+  font-size: 20px;
   line-height: 1.5em;
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .app-container {
@@ -141,6 +147,7 @@ footer p {
 .blog-box p {
   text-align: left;
   margin-left: 1em;
+  margin-right: 1em;
 }
 
 .blog-box a {

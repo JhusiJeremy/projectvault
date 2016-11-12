@@ -13,8 +13,8 @@ export default class Layout extends React.Component {
         <div className="app-content">{this.props.children}</div>
         <footer>
           <p>Contact me@:</p>
-          <Contact url="mailto:jeremy22484@gmail.com" img="/img/gmail.jpg" message="jeremy22484@gmail.com" />
-          <Contact url="https://github.com/JhusiJeremy" img="/img/GitHub-Mark-32px.png" message="JhusiJeremy" />
+          <Contact url="mailto:jeremy22484@gmail.com" img="/img/gmail.jpg" message=" jeremy22484@gmail" />
+          <Contact url="https://github.com/JhusiJeremy" img="/img/GitHub-Mark-32px.png" message=" JhusiJeremy@github" />
           <p>Cheers!</p>
         </footer>
       </div>
@@ -30,11 +30,9 @@ Layout.propTypes = {
 class Contact extends React.Component {
   render() {
     return (
-      <a href={this.props.url} style={{padding: '0'}}>
-        <p style={{verticalAlign: "middle"}}>
-          <img style={{height: '30px'}} src={this.props.img} />
-          {this.props.message}
-        </p>
+      <a href={this.props.url} style={{margin: '1em auto', display: 'table'}}>
+        <img style={{height: '30px'}} src={this.props.img} />
+        <p style={{display: 'inline'}}>{this.props.message}</p>
       </a>
 );}}
 
