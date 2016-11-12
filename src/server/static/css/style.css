@@ -67,10 +67,10 @@ p {
 }
 
 .page-container {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 footer {
@@ -111,42 +111,31 @@ footer p {
 
 /******************** Home Page **********************/
 .blogs-container {
-  margin:auto;
-  width: 960px;
+  width: 100%;
+  column-width: 300px
 }
-
-@media only screen and (max-width: 1000px) {
-  .blogs-container {
-    width: 640px;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  .blogs-container {
-    width: 320px;
-  }
-}
-
 
 /******************** Blog Box **********************/
 
 .blog-box {
-  display: inline-block;
-  margin: 10px;
-  width: 300px;
-  height: auto;
-  background-color: rgba(199,199,199,0.5);
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
 .blog-box img {
   width: 100%;
-  height: 80%;
 }
 
 .blog-box p {
   font-size: 22px;
   text-align: left;
   margin-left: 1em;
+}
+
+.blog-box a {
+  display: inline-block;
 }
 
 .blog-box a:hover {

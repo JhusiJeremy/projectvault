@@ -25,7 +25,6 @@ export default class BlogPage extends React.Component {
   render() {
     return (
       <div className="page-container">
-        <p>This is the blog page</p>
         <div className="blogs-container">
           {this.state.blogs.map(blog=> {
             return (

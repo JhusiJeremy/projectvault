@@ -12,7 +12,7 @@ export default class Layout extends React.Component {
         <NavBar pathname={this.props.location.pathname} />
         <div className="app-content">{this.props.children}</div>
         <footer>
-          <p>This is Weihong's Vault Project.</p>
+          <p>This is Weihong's Project Vault.</p>
           <p>Contact me @ jeremy22484@gmail.com.</p>
           <p>Cheers!</p>
         </footer>

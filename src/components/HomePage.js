@@ -29,21 +29,15 @@ export default class HomePage extends React.Component {
         <PageHeader imgUrl="/img/Monkey-BusinessA" header1="Project Vault" header2="This ain't no place for no hero." />
         <div className="page-container">
           <p>
-            Welcome!<br /><br />
-            It is nice to have you around.<br /><br />
-            Should I introduce myself first?<br /><br />
-            Alright!<br /><br />
-            Who am I? I am a<br /><br />
-            nerd, dreamer, loser,<br /><br />
-            dotaer, OWer, vault dweller,<br /><br />
-            五迷，海龟，人群恐惧症患者<br /><br />
-            ......<br /><br />
-            Wait!<br /><br />
-            You are leaving?
+            Welcome to my playground!<br /><br />
           </p>
-          <img style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', borderRadius: '50%'}} src="/img/OMG.jpg" />
-          <p>
-            Alright, alright ...<br /><br />
+          <p style={{textAlign: "left"}}>  
+            It is the place where I can try any web technology I have learned.
+            This site is currently constructed using Node.js, React.js and Mongodb.
+            I am trying to use as few package as possible in order to polish my programming skills. <br /><br />
+          </p>
+          <p>  
+            So...What's in the box?<br /><br />
           </p>
           <div className="blogs-container">
             {this.state.blogs.map(blog=> {
