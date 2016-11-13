@@ -1,7 +1,7 @@
 // src/components/BlogPage.js
 import React from 'react';
 import { Link } from 'react-router';
-import axios from 'axios';
+import $ from 'jquery';
 import BlogBox from './BlogBox';
 
 export default class BlogPage extends React.Component {
@@ -13,13 +13,10 @@ export default class BlogPage extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8080/api/blogs')
-      .then(response => {
-        this.setState({ blogs: response.data });
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    let that = this;
+    $.get('http://localhost:8080/api/blogs/', function(data, status){
+      that.setState({ blogs: data.slice(0,1) });
+    });
   }
 
   render() {

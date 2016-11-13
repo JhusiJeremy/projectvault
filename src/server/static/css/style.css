@@ -119,7 +119,8 @@ footer p {
 /******************** Home Page **********************/
 .blogs-container {
   width: 100%;
-  column-width: 300px
+  column-width: 300px;
+  margin-bottom: 5em;
 }
 
 .preface {
