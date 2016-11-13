@@ -33,7 +33,10 @@ export default class HomePage extends React.Component {
             The site is currently constructed using Node.js, React.js and Mongodb.
             Not familiar with Redux and Mongodb's userAdminAnyDatabase, working on it.
             Trying to use as few package as possible in order to polish my programming skills.
-            Bootstrap and <del>JQuery</del> are powerful, but not necessary for building a nice web app.<br /><br />
+            Bootstrap and <del>JQuery</del> are powerful, but not necessary for building a nice web app.
+            Why Project Vault? I was playing Fallout 4 and Borderland 2 when I started this project.
+            Vault has implication of treasure, isolation, <del>nuclear war</del> and many cool stuffs. 
+            And it also sounds pretty cool<br /><br />
           </p>
 
           <p style={{borderBottom: "3px double rgba(0, 0, 0, 0.05)"}}>  
@@ -70,9 +73,7 @@ export default class HomePage extends React.Component {
             TODO List<br />
           </p>
           <ul style={{display:'block', marginLeft:'38%'}}>
-            <li>Blog detail page.</li>
-            <li>About me page.</li>
-            <li>Deploy using heroku.</li>
+            <li>Deploy on Amazon EC2.</li>
           </ul>
           
         </div>
