@@ -15,7 +15,7 @@ export default class HomePage extends React.Component {
 
   componentDidMount() {
     let that = this;
-    $.get('http://localhost:80/api/blogs/', function(data, status){
+    $.get('http://localhost:8080/api/blogs/', function(data, status){
       that.setState({ blogs: data.slice(0,1) });
     });
   }
