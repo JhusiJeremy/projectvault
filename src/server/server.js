@@ -18,18 +18,18 @@ const server = new Server(app);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// configure app to use bodyParser()
-// this will let us get the data from a POST
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
 // define the folder that will be used for static assets
 app.use(express.static(path.join(__dirname, 'static')));
 
 // controllers
 app.use("/api", blogController);
 
-// universal routing and rendering
+// configure app to use bodyParser()
+// this will let us get the data from a POST
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// universal routing and rendering without data 
 app.get('*', (req, res) => {
   match(
     { routes, location: req.url },
@@ -49,7 +49,7 @@ app.get('*', (req, res) => {
         markup = renderToString(<RouterContext {...renderProps}/>);
       } else {
         // otherwise we can render a 404 page
-        markup = renderToString(<NotFoundPage/>);
+        markup = renderToString(<NotFoundPage />);
         res.status(404);
       }
       // render the index template with the embedded React markup
@@ -60,7 +60,7 @@ app.get('*', (req, res) => {
 
 // start the server
 const port = process.env.PORT || 8080;
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 server.listen(port, err => {
   if (err) {
     return console.error(err);
