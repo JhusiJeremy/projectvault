@@ -75,7 +75,10 @@ export default class HomePage extends React.Component {
             TODO List<br />
           </p>
           <ul style={{display:'block', marginLeft:'38%'}}>
-            <li>Deploy on Amazon EC2.</li>
+            <li>Finish the first blog.</li>
+            <li>Fix the single blog-box not stay middle bug.</li>
+            <li>Add some popover and tooltips.</li>
+            <li>Implment tag filtering for blogs.</li>
           </ul>
           
         </div>
