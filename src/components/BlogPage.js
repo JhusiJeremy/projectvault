@@ -14,9 +14,9 @@ export default class BlogPage extends React.Component {
 
   componentDidMount() {
     let that = this;
-    console.log('hostname: '+window.location.hostname);
-    let localhost = window.location.hostname;
-    $.get('http://'+localhost+':8080/api/blogs/', function(data, status){
+    console.log('host: '+window.location.host);
+    let localhost8080 = window.location.host;
+    $.get('http://'+localhost8080+':8080/api/blogs/', function(data, status){
       that.setState({ blogs: data });
     });
   }
