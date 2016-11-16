@@ -19,7 +19,7 @@ export default class BlogDetail extends React.Component {
 
   componentDidMount() {
     let that = this;
-    $.get('http://localhost:8080/api/blogs/'+this.props.params.id, function(data, status){
+    $.get('http://localhost:80/api/blogs/'+this.props.params.id, function(data, status){
       if (data.length===0)
         browserHistory.push('/notfound');
       else
