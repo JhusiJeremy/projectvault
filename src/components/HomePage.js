@@ -37,7 +37,7 @@ export default class HomePage extends React.Component {
             Bootstrap and <del>JQuery</del> are powerful, but not necessary for building a nice web app.
             Why Project Vault? I was playing Fallout 4 and Borderland 2 when I started this project.
             Vault has implication of treasure, isolation, <del>nuclear war</del> and many cool stuffs. 
-            And it also sounds pretty cool<br /><br />
+            And it also sounds pretty cool.<br /><br />
           </p>
 
           <p style={{borderBottom: "3px double rgba(0, 0, 0, 0.05)"}}>  
