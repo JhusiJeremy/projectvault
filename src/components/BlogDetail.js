@@ -19,7 +19,6 @@ export default class BlogDetail extends React.Component {
 
   componentDidMount() {
     let that = this;
-    console.log('host: '+window.location.host);
     let localhost8080 = window.location.host;
     $.get('http://'+localhost8080+'/api/blogs/'+this.props.params.id, function(data, status){
       if (data.length===0)

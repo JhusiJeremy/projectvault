@@ -24,7 +24,7 @@ p {
 }
 
 img {
-  vertical-align: middle;
+
 }
 
 .app-container {
@@ -36,11 +36,11 @@ img {
 }
 
 .navbar {
-  height: 49.6px;
+  height: 50px;
   position: fixed;
   width: 100%;
   background-color: rgba(239,239,239,0.5);
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0 0 1px 1px rgba(0,0,0,0.3),0 0 6px 2px rgba(0,0,0,0.15);
   z-index:999;
 }

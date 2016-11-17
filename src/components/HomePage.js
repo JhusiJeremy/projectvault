@@ -15,7 +15,6 @@ export default class HomePage extends React.Component {
 
   componentDidMount() {
     let that = this;
-    console.log('host: '+window.location.host);
     let localhost8080 = window.location.host;
     $.get('http://'+localhost8080+'/api/blogs/', function(data, status){
       that.setState({ blogs: data.slice(0,1) });
@@ -76,6 +75,7 @@ export default class HomePage extends React.Component {
           </p>
           <ul style={{display:'block', marginLeft:'38%'}}>
             <li>Finish the first blog.</li>
+            <li>Server side rendering.</li>
             <li>Fix the single blog-box not stay middle bug.</li>
             <li>Add some popover and tooltips.</li>
             <li>Implment tag filtering for blogs.</li>
