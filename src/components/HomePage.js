@@ -32,7 +32,6 @@ export default class HomePage extends React.Component {
           <p className="preface">  
             This is the place where I can play around any web technology I have learned.
             The site is currently constructed using Node.js, React.js and Mongodb.
-            Not familiar with Redux and Mongodb's userAdminAnyDatabase, working on it.
             Trying to use as few package as possible in order to polish my programming skills.
             Bootstrap and <del>JQuery</del> are powerful, but not necessary for building a nice web app.
             Why Project Vault? I was playing Fallout 4 and Borderland 2 when I started this project.
