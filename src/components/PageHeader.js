@@ -10,7 +10,7 @@ export default class PageHeader extends React.Component {
       backgroundSize: '100% 100%',
       backgroundPosition: 'center',
       width: '100%',
-      height: '320px',
+      height: '30vw',
       opacity: '1',
     };
     return (

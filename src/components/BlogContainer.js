@@ -24,7 +24,7 @@ export default class BlogContainer extends React.Component {
       </div>
 );}}
 BlogContainer.propTypes = {
-  blogs: React.PropTypes.object.isRequired
+  blogs: React.PropTypes.array.isRequired
 }
 BlogContainer.displayName = "BlogContainer";
 
