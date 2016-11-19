@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import PageHeader from './PageHeader';
-import BlogBox from './BlogBox';
+import BlogContainer from './BlogContainer';
 import $ from 'jquery';
 
 export default class HomePage extends React.Component {
@@ -43,32 +43,12 @@ export default class HomePage extends React.Component {
           <p style={{borderBottom: "3px double rgba(0, 0, 0, 0.05)"}}>  
             What's Hot?<br />
           </p>
-          <div className="blogs-container">
-            {this.state.blogs.map(blog=> {
-              return (
-                <BlogBox 
-                  key={blog.title} 
-                  imgUrl={blog.imgUrl} 
-                  title={blog.title}
-                  _id={blog._id} />
-              );
-            })}
-          </div>
+          <BlogContainer blogs={this.state.blogs} />
 
           <p style={{borderBottom: "3px double rgba(0, 0, 0, 0.05)"}}>  
             What's New?<br />
           </p>
-          <div className="blogs-container">
-            {this.state.blogs.map(blog=> {
-              return (
-                <BlogBox 
-                  key={blog.title} 
-                  imgUrl={blog.imgUrl} 
-                  title={blog.title}
-                  _id={blog._id} />
-              );
-            })}
-          </div>
+          <BlogContainer blogs={this.state.blogs} />
 
           <p style={{borderBottom: "3px double rgba(0, 0, 0, 0.05)"}}>  
             TODO List<br />
