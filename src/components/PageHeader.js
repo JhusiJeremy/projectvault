@@ -6,16 +6,10 @@ export default class PageHeader extends React.Component {
   render () {
     let divStyle = {
       backgroundImage: 'url('+this.props.imgUrl+')',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: '100% 100%',
-      backgroundPosition: 'center',
-      width: '100%',
-      height: '30vw',
-      opacity: '1',
     };
     return (
       <div>
-        <div style={divStyle}></div>
+        <div id="header-img" style={divStyle}></div>
         <div className="header">
           <div>
             <h1>{this.props.header1}</h1>
