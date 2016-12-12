@@ -46,19 +46,18 @@ img {
 }
 
 .navbar ul {
-  display: inline-block;
-  float: right;
-  list-style-type: none;
-  padding: 16px 0;
-  margin: 0;
+    float: right;
+    display: inline-block;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
 }
 
 .navbar li {
-  display: inline;
-  padding: inherit;
+  display: inline-block;
+  padding: 17px 0;
   transition: 0.3s;
-  text-align: center;
-  text-decoration: none;
+  font-size: 16px;
 }
 
 .navbar a {
@@ -101,7 +100,7 @@ footer p {
   background-size: 100% 100%;
   background-position: center;
   width: 100%;
-  height: 15em;
+  height: 300px;
   opacity: 1;
 }
 
@@ -109,13 +108,13 @@ footer p {
   position: absolute;
   top: 50px;
   width: 100%;
-  height: 15em;
+  height: 300px;
   background-color: rgba(66,66,66,0.66);
   text-align: center;
 }
 
 .header div {
-  margin-top: 5em;
+  margin-top: 12vh;
   color: rgba(255,255,255,1);
 }
 
