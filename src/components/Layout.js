@@ -65,7 +65,9 @@ class NavBar extends React.Component {
     return (
       <nav className="navbar">
         <Link to={'/'} style={{padding: '0'}}>
-          <img style={{height: '40px', width: '40px', padding: '5px 10px', float: 'left', borderRadius: '50%'}} src="/img/OMG.jpg" />
+          <div className="logo">
+            <img className="logo-avatar" src="/img/OMG.jpg" />
+          </div>
         </Link>
         <ul>
           {pagename.map((name, index) => {
