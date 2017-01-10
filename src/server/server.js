@@ -70,5 +70,9 @@ server.listen(port, err => {
 
 // connect the mongodb database
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/blog_db');
+let options = {
+  user: 'admin',
+  pass: 'abc123'
+}
+mongoose.connect('mongodb://localhost/blog_db', options);
 
