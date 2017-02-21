@@ -13,11 +13,9 @@ export default class BlogPage extends React.Component {
   }
 
   componentDidMount() {
-    let that = this;
     let localhost8080 = window.location.host;
-    $.get('http://'+localhost8080+'/api/blogs/', function(data, status){
-      that.setState({ blogs: data });
-    });
+    $.get('http://'+localhost8080+'/api/blogs/', (data, status)=>{
+      this.setState({ blogs: data });});
   }
 
   render() {

@@ -72,6 +72,5 @@ server.listen(port, err => {
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://admin:abc123@localhost:27017/blog_db', {auth:{authdb:"admin"}});
 
-//mongodb://mydbuser:mypassword@myipaddress:27017/mydb
 
 
